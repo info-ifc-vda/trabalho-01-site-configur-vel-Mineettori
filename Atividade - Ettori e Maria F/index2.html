@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <title>Confeitaria dos Sonhos</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-bg text-white">
+        <div class="container-fluid mx-3">
+            <a class="navbar-brand text-white" href="index1.html">Confeitaria dos Sonhos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-white" aria-current="page" href="index2.html">HomePage</a>
+                </div>
+            </div>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-search" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <img id="main-image" src="Morango/Bolo_Morango.jpeg" alt="Bolo de Morango" class="img-fluid rounded mx-auto d-block m-5" style="max-width: 50%; height: auto;">
+    <select id="flavor-select" class="form-select form-select-lg w-25 m-5" aria-label="Large select example">
+        <option selected value="Morango">Morango</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Laranja">Laranja</option>
+        <option value="Baunilha">Baunilha</option>
+        <option value="Banana">Banana</option>
+    </select>
+    <div class="font-size-control d-flex align-items-center gap-3 mx-5 mb-4">
+        <label for="font-size-range" class="form-label mb-0">Tamanho da fonte:</label>
+        <input id="font-size-range" type="range" min="14" max="24" value="16" class="form-range w-50" />
+        <span id="font-size-value" class="fw-bold">16px</span>
+    </div>
+    <p id="image-description" class="m-5 p-bg">O bolo de morango é uma sobremesa deliciosa e refrescante, perfeita para qualquer ocasião. Ele é feito com camadas de bolo macio, recheio de creme de morango e coberto com chantilly e morangos frescos. A combinação do sabor doce do bolo com a acidez dos morangos cria uma experiência única e irresistível para os amantes de doces.</p>
+
+    <section class="carousel-section m-5">
+        <h2 class="text-center mb-4">Galeria de Sobremesas</h2>
+        <div class="carousel-wrapper">
+            <button class="carousel-button prev" type="button" aria-label="Imagem anterior">‹</button>
+            <div class="carousel-slide">
+                <img src="Morango/Bolo_Morango.jpeg" alt="Bolo de Morango" class="carousel-image" style="cursor: pointer;">
+            </div>
+            <button class="carousel-button next" type="button" aria-label="Próxima imagem">›</button>
+        </div>
+    </section>
+
+    <footer class="footer-bg fixed-bottom text-white">
+        <div class="container py-3 text-center">
+            <p class="mb-0">© 2026 Confeitaria dos Sonhos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

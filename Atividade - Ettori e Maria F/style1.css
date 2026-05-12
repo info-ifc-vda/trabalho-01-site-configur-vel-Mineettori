@@ -1,0 +1,118 @@
+:root {
+    --navbar-bg: #d62f2f;
+    --body-bg: #f4b9c4;
+    --surface-bg: white;
+    --button-bg: #a71d1d;
+    --button-hover: #861d1d;
+    --footer-bg: #d62f2f;
+    --global-font-size: 16px;
+}
+
+body {
+    background-color: var(--body-bg);
+    font-size: var(--global-font-size);
+}
+
+.text-white {
+    color: white;
+}
+
+.navbar-bg {
+    background-color: var(--navbar-bg);
+}
+
+.btn-search {
+    background-color: var(--button-bg);
+    color: white;
+}
+
+.btn-search:hover {
+    background-color: var(--button-hover);
+    color: white;
+}
+
+.btn-bg {
+    background-color: var(--button-bg);
+    padding: 15px 32px;
+}
+
+.btn-bg:hover {
+    background-color: var(--button-hover);
+    color: white;
+}
+
+.p-bg {
+    background-color: var(--surface-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#image-description {
+    font-size: inherit;
+}
+
+.footer-bg {
+    background-color: var(--footer-bg);
+}
+
+.carousel-section {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.carousel-slide {
+    width: 100%;
+    max-width: 720px;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.14);
+}
+
+.carousel-image {
+    width: 100%;
+    display: block;
+}
+
+.carousel-button {
+    border: none;
+    background-color: var(--button-bg);
+    color: white;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.carousel-button:hover {
+    background-color: #a71d1d;
+}
+
+.carousel-caption {
+    background-color: white;
+    color: #333;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        flex-direction: column;
+    }
+
+    .carousel-button {
+        width: 48px;
+        height: 48px;
+    }
+}
